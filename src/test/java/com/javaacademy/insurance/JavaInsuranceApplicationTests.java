@@ -1,4 +1,4 @@
-package com.javaacademy.java_insurance;
+package com.javaacademy.insurance;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

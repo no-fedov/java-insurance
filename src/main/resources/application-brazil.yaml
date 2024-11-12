@@ -1,0 +1,5 @@
+app:
+  country: Brazil
+  currency: real
+  insurance-robbery-rate: 0.05
+  insurance-medical-rate: 0.03

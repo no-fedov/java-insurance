@@ -1,4 +1,4 @@
-package com.javaacademy.java_insurance;
+package com.javaacademy.insurance;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

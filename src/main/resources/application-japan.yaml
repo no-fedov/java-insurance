@@ -1,0 +1,5 @@
+app:
+  country: Japan
+  currency: yen
+  insurance-robbery-rate: 0.01
+  insurance-medical-rate: 0.015
