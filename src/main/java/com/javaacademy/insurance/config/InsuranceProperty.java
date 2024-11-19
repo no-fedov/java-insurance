@@ -10,10 +10,8 @@ import java.math.BigDecimal;
 @Setter
 @ConfigurationProperties(prefix = "app")
 public class InsuranceProperty {
-    String country;
-    String currency;
-    BigDecimal insuranceRobberyRate;
-    BigDecimal insuranceMedicalRate;
+    private String country;
+    private String currency;
+    private BigDecimal insuranceRobberyRate;
+    private BigDecimal insuranceMedicalRate;
 }
-
-
