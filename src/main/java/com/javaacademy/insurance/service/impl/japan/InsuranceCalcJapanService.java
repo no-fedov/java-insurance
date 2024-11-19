@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
-import static com.javaacademy.insurance.util.LinearFunctionBigDecimal.calculateValueOfLinearFunction;
+import static com.javaacademy.insurance.util.LinearInsuranceCalculator.*;
 
 @Component
 @Profile("japan")
@@ -23,12 +23,12 @@ public class InsuranceCalcJapanService implements InsuranceCalcService {
     @Override
     public BigDecimal calcInsuranceCost(BigDecimal coverageAmount, InsuranceType insuranceType) {
         return switch (insuranceType) {
-            case MEDICAL -> calculateValueOfLinearFunction(
+            case MEDICAL -> calculatePriceForInsurance(
                     insuranceProperty.getInsuranceMedicalRate(),
                     coverageAmount,
                     MEDICAL_PAYMENT
             );
-            case ROBBERY_PROTECTION -> calculateValueOfLinearFunction(
+            case ROBBERY_PROTECTION -> calculatePriceForInsurance(
                     insuranceProperty.getInsuranceRobberyRate(),
                     coverageAmount,
                     ROBBERY_PAYMENT
