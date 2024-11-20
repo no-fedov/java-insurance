@@ -1,9 +1,8 @@
 package com.javaacademy.insurance.util;
 
-import lombok.AccessLevel;
-import lombok.NoArgsConstructor;
+import lombok.experimental.UtilityClass;
 
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@UtilityClass
 public class InsuranceNumberGenerator {
     private static int generatorId = 0;
 

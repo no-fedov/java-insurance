@@ -9,7 +9,7 @@ import lombok.RequiredArgsConstructor;
 
 import java.math.BigDecimal;
 
-import static com.javaacademy.insurance.util.InsuranceNumberGenerator.generateInsuranceContractNumber;
+import static com.javaacademy.insurance.util.InsuranceNumberGenerator.*;
 
 @RequiredArgsConstructor
 public class AbstractInsuranceService implements InsuranceService {
